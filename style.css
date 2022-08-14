@@ -26,10 +26,10 @@ body {
 }
 .popup,
 .notification {
-  filter: invert();
+  filter: invert(100);
 }
 .menu__item__link :not(:hover),
-.popup__item__link :not(:hover){
+.popup__item__link :not(:hover) {
   pointer-events: none;
 }
 .menu__item :hover {
@@ -41,13 +41,15 @@ body {
   box-shadow: 2px 1px 1px black;
 }
 .popup__item :hover {
-  filter: invert();
+  filter: invert(100);
 }
 .menu__item :active {
-  filter: invert();
+  filter: invert(100);
 }
-.popup__hidden:hover, .grid__hidden-body:hover, .grid__body:hover{
-border: 1px solid transparent;
+.popup__hidden:hover,
+.grid__hidden-body:hover,
+.grid__body:hover {
+  border: 1px solid transparent;
 }
 .checkbox__popup-input,
 .checkbox__popup-more {
@@ -116,7 +118,7 @@ border: 1px solid transparent;
   bottom: 5px;
   left: 140px;
   color: black;
-  padding: 1px 1px;  
+  padding: 1px 1px;
   border-radius: 50px;
 }
 .grid__hidden-body {
